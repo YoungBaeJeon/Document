@@ -3,7 +3,7 @@
 
 index | service id | name | description | icon url | Android package name | iOS applcation id | Web url
 ------|------------|------|-------------|----------|----------------------|-------------------|----------
-1     | com.coinplug.metasafe | metaSAFE | meta SAFE | http:// | com.coinplug.metasafe | id393993993 | http://wwww.metasafe.com
+1     | com.coinplug.metasafe | metaSAFE<br>ko:메타세이프 | meta SAFE<br>ko:메타세이프 | http:// | com.coinplug.metasafe | id393993993 | http://wwww.metasafe.com
 
 
 
