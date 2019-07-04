@@ -6,6 +6,10 @@ index | service id | name | description | icon url | Android package name | iOS 
 1     | com.coinplug.metasafe | metaSAFE<br>ko:메타세이프 | meta SAFE<br>ko:메타세이프 | http:// | com.coinplug.metasafe | id393993993 | http://wwww.metasafe.com
 
 
+index | service id | name | description | icon url | Application ID
+------|------------|------|-------------|----------|---------------
+1     | com.coinplug.metasafe | metaSAFE<br>ko:메타세이프 | meta SAFE<br>ko:메타세이프 | http:// | android:com.coinplug.metasafe<br> iOS:id393993993<br>web:http://wwww.metasafe.com
+
 
 
 ## iOS pre register scheme
