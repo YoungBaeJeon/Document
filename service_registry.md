@@ -39,7 +39,9 @@ index | service id | Android package name | iOS applcation id | Web url
 
 ### iOS pre register scheme
 
-scheme 을 왜 등록하고 어떻게 등록해야 하는지 설명
+iOS 에서 keepin 에서 서비스 앱을 호출하기 하기 위해서 미리 scheme 을 등록해놨으며 서비스 등록 시 리스트 중에 하나를 선택해서 해당 앱에 등록해야 함
+LSApplicationQueriesSchemes 에 등록하세요
+
 
 index | scheme        | service id
 ------|---------------|------------
