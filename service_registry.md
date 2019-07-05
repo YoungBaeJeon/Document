@@ -4,14 +4,17 @@ Sample #1
 
 index | service id | name | description | icon url | Android package name | iOS applcation id | Web url
 ------|------------|------|-------------|----------|----------------------|-------------------|----------
-1     | com.coinplug.metasafe | metaSAFE<br>ko:메타세이프 | meta SAFE<br>ko:메타세이프 | http:// | com.coinplug.metasafe | id393993993 | http://wwww.metasafe.com
+1     | com.coinplug.metasafe | metaSAFE<br>ko:메타세이프 | meta SAFE<br>ko:메타세이프 가나달 러암 러아 러암ㄴ 러아러ㅏㅁ  러암ㄴ 러ㅏㅇ미ㅓㄹ| http:// | com.coinplug.metasafe | id393993993 | http://wwww.metasafe.com
 
 Sample #2
 
-index | service id | name | description | icon url | Application ID
-------|------------|------|-------------|----------|---------------
-1     | com.coinplug.metasafe | metaSAFE<br>ko:메타세이프 | meta SAFE<br>ko:메타세이프 | http:// | android:com.coinplug.metasafe<br> iOS:id393993993<br>web:http://wwww.metasafe.com
+index | service id | name | description | icon url
+------|------------|------|-------------|----------
+1     | com.coinplug.metasafe | metaSAFE<br>ko:메타세이프 | meta SAFE<br>ko:메타세이프 | http://
 
+index | service id | Android package name | iOS applcation id | Web url
+------|------------|----------------------|-------------------|----------
+1     | com.coinplug.metasafe | com.coinplug.metasafe | id393993993 | http://wwww.metasafe.com
 
 
 ## iOS pre register scheme
