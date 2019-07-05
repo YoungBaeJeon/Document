@@ -10,7 +10,7 @@ Sample #2
 
 index | service id | name | description | icon url
 ------|------------|------|-------------|----------
-1     | com.coinplug.metasafe | metaSAFE<br>ko:메타세이프 | meta SAFE<br>ko:메타세이프 | http://
+1     | com.coinplug.metasafe | metaSAFE<br>ko:메타세이프 | meta SAFE fjkdsa fjdka jfdklsa jfkdla<br>ko:메타세이프 러ㅏ인ㅁ 러이ㅏㄴㅁ 러아민 ㄹ 러암닐  | http://
 
 index | service id | Android package name | iOS applcation id | Web url
 ------|------------|----------------------|-------------------|----------
