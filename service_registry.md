@@ -15,6 +15,7 @@ index | service id | name | description | icon url
 1     | com.coinplug.metasafe | metaSAFE<br>ko:메타세이프 | meta SAFE fjkdsa fjdka jfdklsa jfkdla<br>ko:메타세이프 러ㅏ인ㅁ 러이ㅏㄴㅁ 러아민 ㄹ 러암닐  | http://
 
 Application Information #2
+
 index | service id | Android package name | iOS applcation id | Web url
 ------|------------|----------------------|-------------------|----------
 1     | com.coinplug.metasafe | com.coinplug.metasafe | id393993993 | http://wwww.metasafe.com
