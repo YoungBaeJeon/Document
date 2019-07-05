@@ -2,7 +2,7 @@
 Server 쪽에서 인증 처리하기 위해 각 언어별 설정 및 샘플 코드를 설명합니다.  
 
 
-###### Java
+### Java
 
 [Web3j](https://github.com/web3j/web3j#getting-started) 추가. 아래 코드는 4.2.0 기준으로 코드가 작성되어 있음.  
 Contract method 를 쉽게 호출하기 위해 generate 된 [IdentityRegistry](https://github.com/YoungBaeJeon/metadium_android_sdk/edit/master/app/src/main/java/com/metadium/metadiumsdk/IdentityRegistry.java), [ServiceKeyResolver](https://github.com/YoungBaeJeon/metadium_android_sdk/edit/master/app/src/main/java/com/metadium/metadiumsdk/IdentityRegistry.java) 소스 복사하여 프로젝트에 포함시킵니다.  
@@ -86,5 +86,49 @@ try {
 }
 catch (Exception e) {
     // error
+}
+```
+  
+  
+  
+### JavaScript
+```javascript
+import Web3 from 'web3';
+
+const IS_TESTNET = true;
+const OPEN_API_NODE_URL = IS_TEST_NET ? 'https://api.metadium.com/dev' : 'https://api.metadium.com/prod';
+const IDENTITY_REGISTRY_CONTRACT_ADDRESS = IS_TEST_NET ? '0xbe2bb3d7085ff04bde4b3f177a730a826f05cb70' : '0x42bbff659772231bb63c7c175a1021e080a4cf9d';
+
+let nonce = '....';      // 서명 시 사용된 메세지
+let sinature = '...';    // Cilent 에서 전달 받은 서명
+let metaId = "...";     // Client 에서 전달 받은 Meta ID
+let serviceId = "...";   // 발급받은 service id
+
+// init web3
+const web3 = new Web3();
+web3.setProvider(new Web3.providers.HttpProvider(OPEN_API_NODE_URL));
+
+// ec-recovery
+const key = web3.accounts.recover(web3.utils.sha3(nonce), signature, true);
+
+// IdentityRegistry 에서 resolver address 획득
+const identityRegistryContract = web3.eth.Contract(ABI_CODE, IDENTITY_REGISTRY_CONTRACT_ADDRESS);
+const identity = await identityRegistryContract.methods.getIdentity(ein).call();
+const serviceKeyResolverAddress = identity.resolvers[0];
+
+// 키가 등록되어 있는지 확인
+const serviceKeyResolverContract = web3.eth.Contract(ABI_CODE, serviceKeyResolverAddress);
+const hasKey = await serviceKeyResolverContract.methods.isKeyFor(key, ein).call();
+const symbol = await serviceKeyResolverContract.methods.getSymbol(key).call();
+if (hasKey) {
+    if (symbol.equals(serviceId)) {
+	    // 키 등록되어 있음
+    }
+    else {
+        // 키는 등록되어 있으나 제공 서비스가 아님
+    }
+}
+else {
+	// 해당키가 등록되어 있지 않음
 }
 ```
