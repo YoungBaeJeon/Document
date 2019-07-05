@@ -1,27 +1,45 @@
-## Service Infomaton
+# Service 등록
+
+## 서비스 등록 방법
+서비스 등록 하는 방법 설명
+1. 서비스 정보 등록 및 Pull request
+2. 관리자 서비스 등록 반영
+3. 테스트 방법
+4. ...
+
+### Service Infomaton
 
 Sample #1
+서비스 등록할 정보 설명
+1. service id : 등록할 서비스의 고유 ID
+2. name : 서비스의 이름. Keepin 앱에 노출됨
+3. descritpion : 서비스의 설명. Keepin 앱에 노출됨
+4. icon url : 서비스 아이콘 url. Keepin 앱에 노출됨
+5. android package name : keepin 앱에서 해당 서비스 앱을 launch 하거나 playstore 로 install 를 유도할 때 사용
+6. iOS application id : appstore 로 install 를 유도할 때 사용
+6. web url : web 서비스 인 경우 서비스 url
 
 index | service id | name | description | icon url | Android package name | iOS applcation id | Web url
 ------|------------|------|-------------|----------|----------------------|-------------------|----------
-1     | com.coinplug.metasafe | metaSAFE<br>ko:메타세이프 | meta SAFE<br>ko:메타세이프 가나달 러암 러아 러암ㄴ 러아러ㅏㅁ  러암ㄴ 러ㅏㅇ미ㅓㄹ| http:// | com.coinplug.metasafe | id393993993 | http://wwww.metasafe.com
+1     | com.coinplug.metasafe | metaSAFE<br>ko:메타세이프 | Coinplug CryptoCurrency Assurance Services<br>ko:코인플러그 암호화폐 자산 보장 서비스 | http:// | com.coinplug.metasafe | id393993993 | https://raw.githubusercontent.com/METADIUM/static/master/service/image/MetaSafe.png
 
 Sample #2
-
-Application Infomation #1
+Application Basic Infomation
 
 index | service id | name | description | icon url
 ------|------------|------|-------------|----------
-1     | com.coinplug.metasafe | metaSAFE<br>ko:메타세이프 | meta SAFE fjkdsa fjdka jfdklsa jfkdla<br>ko:메타세이프 러ㅏ인ㅁ 러이ㅏㄴㅁ 러아민 ㄹ 러암닐  | http://
+1     | com.coinplug.metasafe | metaSAFE<br>ko:메타세이프 | Coinplug CryptoCurrency Assurance Services<br>ko:코인플러그 암호화폐 자산 보장 서비스  | http://
 
-Application Information #2
+Application Interaction Information
 
 index | service id | Android package name | iOS applcation id | Web url
 ------|------------|----------------------|-------------------|----------
-1     | com.coinplug.metasafe | com.coinplug.metasafe | id393993993 | http://wwww.metasafe.com
+1     | com.coinplug.metasafe | com.coinplug.metasafe | id393993993 | 
 
 
-## iOS pre register scheme
+### iOS pre register scheme
+
+scheme 을 왜 등록하고 어떻게 등록해야 하는지 설명
 
 index | scheme        | service id
 ------|---------------|------------
