@@ -15,13 +15,13 @@ public static Sign.SignatureData stringToSignatureData(String signature) {
 }
 
 final bool IS_TEST_NET = true;
-final String OPEN_API_NODE_URL = IS_TEST_NET ? "https://api.metadium.com/dev" : "https://api.metadium.com/prod";
-final String IDENTITY_REGISTRY_CONTRACT_ADDRESS = IS_TEST_NET ? "0xbe2bb3d7085ff04bde4b3f177a730a826f05cb70" : "0x42bbff659772231bb63c7c175a1021e080a4cf9d";
+final String OPEN_API_NODE_URL = IS_TEST_NET ? "https://api.metadium.com/dev" : "https://api.metadium.com/prod";    // testnet, mainnet node url
+final String IDENTITY_REGISTRY_CONTRACT_ADDRESS = IS_TEST_NET ? "0xbe2bb3d7085ff04bde4b3f177a730a826f05cb70" : "0x42bbff659772231bb63c7c175a1021e080a4cf9d";    // contract address of IdentityRegistry (testnet, mainnet)
 
-String sinature = "...";    // Cilent 에서 전달 받은 서명
-String metaId = "...";      // Client 에서 전달 받은 Meta ID
+String nonce = "...";       // Keepin 앱에 전달한 nonce 값
+String sinature = "...";    // Keepin 앱에서 전달 받은 서명
+String metaId = "...";      // Keepin 앱에서 전달 받은 Meta ID
 String serviceId = "...";   // 발급받은 service id
-
 
 // ec-recover를 통해 서명자의 주소 획득
 SignatureData signatureData = stringToSignatureData(signature);
@@ -96,12 +96,12 @@ catch (Exception e) {
 import Web3 from 'web3';
 
 const IS_TESTNET = true;
-const OPEN_API_NODE_URL = IS_TEST_NET ? 'https://api.metadium.com/dev' : 'https://api.metadium.com/prod';
-const IDENTITY_REGISTRY_CONTRACT_ADDRESS = IS_TEST_NET ? '0xbe2bb3d7085ff04bde4b3f177a730a826f05cb70' : '0x42bbff659772231bb63c7c175a1021e080a4cf9d';
+const OPEN_API_NODE_URL = IS_TEST_NET ? 'https://api.metadium.com/dev' : 'https://api.metadium.com/prod';        // testnet, mainnet node url
+const IDENTITY_REGISTRY_CONTRACT_ADDRESS = IS_TEST_NET ? '0xbe2bb3d7085ff04bde4b3f177a730a826f05cb70' : '0x42bbff659772231bb63c7c175a1021e080a4cf9d';    // contract address of IdentityRegistry (testnet, mainnet)
 
-let nonce = '....';      // 서명 시 사용된 메세지
-let sinature = '...';    // Cilent 에서 전달 받은 서명
-let metaId = "...";     // Client 에서 전달 받은 Meta ID
+let nonce = "...";       // Keepin 앱에 전달한 nonce 값
+let sinature = "...";    // Keepin 앱에서 전달 받은 서명
+let metaId = "...";      // Keepin 앱에서 전달 받은 Meta ID
 let serviceId = "...";   // 발급받은 service id
 
 // init web3
