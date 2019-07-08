@@ -3,8 +3,9 @@
 
 ### Service Infomaton
 
-Sample #1
-서비스 등록할 정보 설명
+Keepin 을 통한 인증을 사용하기 위해서는 아래의 항목을 등록해야 합니다.  
+각 항목들은 Keepin 앱에 해당 서비스의 내용을 보여주거나 이동하기 위해 사용됩니다.  
+
 1. service id : 등록할 서비스의 고유 ID
 2. name : 서비스의 이름. Keepin 앱에 노출됨
 3. descritpion : 서비스의 설명. Keepin 앱에 노출됨
@@ -18,7 +19,7 @@ index | service id | name | description | icon url | Android package name | iOS 
 1     | com.coinplug.metasafe | metaSAFE<br>ko:메타세이프 | Coinplug CryptoCurrency Assurance Services<br>ko:코인플러그 암호화폐 자산 보장 서비스 | http:// | com.coinplug.metasafe | id393993993 | https://raw.githubusercontent.com/METADIUM/static/master/service/image/MetaSafe.png
 
 
-### iOS pre register scheme
+### iOS pre-register scheme
 
 iOS 에서 keepin 에서 서비스 앱을 호출하기 하기 위해서 미리 scheme 을 등록해놨으며 서비스 등록 시 리스트 중에 하나를 선택해서 해당 앱에 등록해야 함
 LSApplicationQueriesSchemes 에 등록하세요
