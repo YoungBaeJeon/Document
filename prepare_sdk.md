@@ -1,12 +1,51 @@
-# SDK 준비
+# Getting Start
 
 ### Unity
-Asset store 에서 KeepinSDK를 다운로드 후 Import 합니다. <= assetstore 에 publish 후 link 추가 필요
-KeepinSDK/Example 을 참고하여 코드를 작성합니다.
+Download and import [KeepinSDK](http://u3d.as/1zHk) from Asset store.  
+Write the code referring to KeepinSDK/Example inside the Asset.  (Asset 안에 KeepinSDK/Example 을 참고하여 코드를 작성합니다.)  
+  
+##### Setting Service ID
+Initialize the SDK with the [registered service ID](service_registry.md).  
+```C#
+KeepinSDK keepinSDK = KeepinSDK.Initialize("service id");
+```
+##### Request register service
+Keepin 앱에 인증을 사용하기 위한 권한을 요청하는 예제입니다.  
+```C#
+// Check install
+if (keepinSDK.IsInstalled())
+{
+    // Request service register
+    keepinSDK.Register(new CallbackDelegete(RegisterOnResult), "message");
+}
+else
+{
+    // Launch store
+    keepinSDK.Install();
+}
+```
+Callback 받기 위한 함수를 정의 합니다.
+```C#
+static void RegisterOnResult(Result result)
+{
+    if (result.IsSuccess())
+    {
+        // success register
+        // result.metaID : user MetaID
+        // result.sign   : signature message by user's private key
+        // result.txID   : 
+    }
+    else
+    {
+        GameObject.Find("MetaID").GetComponent<Text>().text = "Register\nError=" + ((ErrorCode)result.code).ToString();
+    }
+
+}
+```
 
 ### Android
-[Android SDK Repository](https://github.com/YoungBaeJeon/metadium_android_sdk) 을 참조
+준비중
 
 ### iOS
-아직 준비되지 않았습니다.
+준비중
 
