@@ -21,12 +21,13 @@ To register service, input service information at [ServiceRegistry File](service
 For iOS Services, extra step of registering [scheme register](service_registry.md#ios-pre-register-scheme) is required.
 
 #### SDK Preperation
-Download proper [SDK](prepare_sdk.md) for your platform and add code.
-For now only Unity / Android are available.  
+Download proper [SDK](prepare_sdk.md) for your platform and add code.  
+For now only Unity.
 
 
 #### Server Code Addition
-Add codes to existing server code for authentication. Reference: [Server SampleCode](server_side_usage.md)
+Add codes to existing server code for authentication.  
+Reference: [Server SampleCode](server_side_usage.md)
 
 
 
