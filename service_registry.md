@@ -23,8 +23,7 @@ index | service id | name | description | icon url | Android package name | iOS 
 ### iOS pre-register scheme
 
 For iOS serivces to call Keepin App, scheme needs to be pre-registered.  
-Please select a scheme from the list.  
-LSApplicationQueriesSchemes below and register the application with service id.  
+Please select a scheme from the list and add the selected scheme to  URLType.  
 
 
 index | scheme        | service id
