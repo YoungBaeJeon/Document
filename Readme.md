@@ -26,7 +26,7 @@ For now only Unity / Android are available.
 
 
 #### Server Code Addition
-Add codes to existing server code for authentication / reference: [Server SampleCode](server_side_usage.md)
+Add codes to existing server code for authentication. Reference: [Server SampleCode](server_side_usage.md)
 
 
 
