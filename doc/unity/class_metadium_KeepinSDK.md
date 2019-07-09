@@ -1,13 +1,17 @@
 # Metadium Namespace Reference
-class [KeepinSDK](class_metadium_KeepinSDK.md#KeepinSDK-Class-Reference)  
-class [Result](class_metadium_KeepinSDK.md#result-class-reference)  
-enum [ErrorCode](class_metadium_KeepinSDK.md#ErrorCode)  
-delegate void [CallbackDelegete](class_metadium_KeepinSDK.md#callbackdelegete)(Result result)  
+***class*** [**KeepinSDK**](class_metadium_KeepinSDK.md#KeepinSDK-Class-Reference)  
+***class*** [**Result**](class_metadium_KeepinSDK.md#result-class-reference)  
+***enum*** [**ErrorCode**](class_metadium_KeepinSDK.md#ErrorCode)  
+***delegate*** ***void*** [**CallbackDelegete**](class_metadium_KeepinSDK.md#callbackdelegete)([**Result**](class_metadium_KeepinSDK.md#result-class-reference) result)  
+<br/>
+<br/>
+<br/>
+
 
 
 ErrorCode
 -------------
-enum ErrorCode : int  
+***enum*** ErrorCode : ***int***
 Response error code.
   * UserCancel
   * NotCreatedMetaID
