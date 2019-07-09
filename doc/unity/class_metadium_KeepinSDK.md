@@ -10,7 +10,7 @@
 
 ErrorCode
 -------------
-***enum ErrorCode : int***
+***enum*** **ErrorCode** : ***int***
 
 Response error code
   * UserCancel
@@ -23,7 +23,7 @@ Response error code
 
 CallbackDelegete()
 ----------------------
-***delegate void Metadium.CallbackDelegete([Result](class_metadium_KeepinSDK.md#callbackdelegete) result)***
+***delegate void*** **Metadium.CallbackDelegete**(**[Result](class_metadium_KeepinSDK.md#callbackdelegete)** result)
 
 callback delegate for receiving response to requests to register and authentication to Keepin App.
 
@@ -35,7 +35,7 @@ callback delegate for receiving response to requests to register and authenticat
 
 Authentication()
 --------------------------------------------------------
-***void Authentication([CallbackDelegete](class_metadium_KeepinSDK.md#callbackdelegete) callback, string nonce, bool autoRegister = `false`, string expectMetaId = `null` )***
+***void*** **Authentication**(**[CallbackDelegete](class_metadium_KeepinSDK.md#callbackdelegete)** callback, ***string*** nonce, ***bool*** autoRegister = `false`, ***string*** expectMetaId = `null` )
 
 Request authentication of the service in Keepin App.
 
@@ -47,7 +47,7 @@ Request authentication of the service in Keepin App.
 
 Initialize()
 ----------------------------------------------------
-***static [KeepinSDK](class_metadium_KeepinSDK.md#KeepinSDK-Class-Reference) Initialize(string serviceId)***
+***static*** **[KeepinSDK](class_metadium_KeepinSDK.md#KeepinSDK-Class-Reference)** **Initialize**(***string*** serviceId)
 
 SDK initializing
 
@@ -59,13 +59,13 @@ SDK initializing
 
 Install()
 -------------------------------------------------
-***void Install()***
+***void*** **Install**()
 
 Launch store to download Keepin app
 
 IsInstalled()
 -----------------------------------------------------
-***bool IsInstalled()***
+***bool*** **IsInstalled()**
 
 Check to installed Keepin App.
 
@@ -74,7 +74,7 @@ Check to installed Keepin App.
 
 OnError()
 -------------------------------------------------
-***void OnError(string message)***
+***void*** **OnError**(***string*** message)
   
 On response error
   
@@ -83,7 +83,7 @@ On response error
 
 OnResult()
 --------------------------------------------------
-***void OnResult(string message)***
+***void*** **OnResult**(***string*** message)
   
 On response data  
   
@@ -92,7 +92,7 @@ On response data
 
 Register()
 --------------------------------------------------
-***void Register([CallbackDelegete](class_metadium_KeepinSDK.md#callbackdelegete) callback, string nonce)***
+***void*** **Register**(**[CallbackDelegete](class_metadium_KeepinSDK.md#callbackdelegete)** callback, ***string*** nonce)
   
 Request registration of the service in Keepin App.  
   
@@ -104,7 +104,7 @@ Request registration of the service in Keepin App.
 
 Result()
 --------------------------
-***Result (int code)***
+**Result**(***int*** code)
 
 Contruct with Error code
 
@@ -113,7 +113,7 @@ Contruct with Error code
 
 IsSuccess()
 ---------------
-***bool IsSuccess()***
+***bool*** **IsSuccess**()
 
 Check success result
 
@@ -122,30 +122,30 @@ Check success result
 
 metaID
 ----------------
-***string metaID***
+***string*** metaID
   
 Meta ID of Keepin
 
 sign
 ----------------
-***string sign***
+***string*** sign
 
 Meta ID of Signature with service key  
 
 txID
 ----------------
-***string txID***
+***string*** txID
 
 Service registered transcion hash
 
 code
 ----------------
-***int code = -1***
+***int*** code = -1
 
 Error Code. Show [ErrorCode](class_metadium_KeepinSDK.md#ErrorCode)
 
 error
 ----------------
-***string error***
+***string*** error
 
 Error message
