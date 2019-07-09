@@ -1,8 +1,40 @@
-# KeepinSDK Class Reference
+# Metadium Namespace Reference
+class [KeepinSDK](class_metadium_KeepinSDK.md#KeepinSDK-Class-Reference)  
+class [Result](class_metadium_KeepinSD.mdK#Result)  
+enum [ErrorCode](class_metadium_KeepinSDK.md#ErrorCode)  
+delegate void [CallbackDelete](class_metadium_KeepinSDK.md#CallbackDelegete())(Result result)  
+
+
+ErrorCode
+-------------
+enum ErrorCode : int  
+Response error code.
+  * UserCancel
+  * NotCreatedMetaID
+  * NotMatchedMetaID
+  * NotlinkedService
+  * NotRegisterService
+  * InvalidParam
+  * InvalidSignature 
+  
+  
+CallbackDelegete()
+----------------------
+delegate void Metadium.CallbackDelegete(Result result)  
+  
+callback delegate for receiving response to requests to register and authentication to Keepin App.  
+  
+Parameters  
+  * result : Response to request  
+  
+  
+  
+
+## KeepinSDK Class Reference
 
 Authentication()
 --------------------------------------------------------
-void Authentication([CallbackDelegete](./namespace_metadium.md#CallbackDelegete) callback,string nonce,bool autoRegister = `false`,string expectMetaId = `null` )  
+void Authentication([CallbackDelegete](class_metadium_KeepinSDK.md#CallbackDelegete()) callback,string nonce,bool autoRegister = `false`,string expectMetaId = `null` )  
   
 Request authentication of the service in Keepin App.  
 
@@ -14,7 +46,7 @@ Parameters
 
 Initialize()
 ----------------------------------------------------
-static [KeepinSDK](./class_metadium_KeepinSDK.md) Initialize(string serviceId)
+static [KeepinSDK](class_metadium_KeepinSDK.md#KeepinSDK-Class-Reference) Initialize(string serviceId)
 
 SDK initializing
 
@@ -63,7 +95,7 @@ Parameters
 
 Register()
 --------------------------------------------------
-void Register([CallbackDelegete](./namespace_metadium.md#CallbackDelegete) callback,string nonce)  
+void Register([CallbackDelegete](class_metadium_KeepinSDK.md#CallbackDelegete()) callback,string nonce)  
   
 Request registration of the service in Keepin App.  
   
@@ -72,3 +104,67 @@ Parameters
   * nonce : Data to sign with the service key
 
 
+
+## Result Class Reference
+
+Result()
+--------------------------
+Result (int 	code)  
+  
+Contruct with Error code  
+  
+Parameters
+  * code : error code
+  
+  
+  
+IsSuccess()
+---------------
+bool IsSuccess()  
+  
+Check success result  
+  
+Returns  
+  * If error code is success, return true  
+  
+  
+metaID
+----------------
+string metaID  
+  
+Meta ID of Keepin  
+  
+  
+  
+sign
+----------------
+string sign  
+  
+Meta ID of Signature with service key  
+  
+  
+  
+txID
+----------------
+string txID  
+  
+Service registered transcion hash  
+  
+  
+  
+code
+----------------
+int code = -1  
+  
+Error Code. Show [ErrorCode](class_metadium_KeepinSDK.md#ErrorCode)  
+  
+  
+  
+error
+----------------
+string error  
+  
+Error message  
+  
+  
+  
