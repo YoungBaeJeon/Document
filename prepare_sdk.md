@@ -38,7 +38,7 @@ static void RegisterOnResult(Result result)
         // success register
         // result.metaID : user MetaID
         // result.sign   : signature message by user's private key
-        // result.txID   : 
+        // result.txID   : transaction hash of register
     }
     else
     {
@@ -74,7 +74,7 @@ static void AuthenticationOnResult(Result result)
         // success authentication
         // result.metaID : user MetaID
         // result.sign   : signature message by user's private key
-        // result.txID   : 
+        // result.txID   : if user register service, return transaction hash of register
     }
     else
     {
