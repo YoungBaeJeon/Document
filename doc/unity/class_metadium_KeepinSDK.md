@@ -13,13 +13,16 @@ ErrorCode
 ***enum*** **ErrorCode** : ***int***
 
 Response error code
-  * UserCancel
-  * NotCreatedMetaID
-  * NotMatchedMetaID
-  * NotlinkedService
-  * NotRegisterService
-  * InvalidParam
-  * InvalidSignature 
+
+| Error code name     | description                                                                                |
+|---------------------|--------------------------------------------------------------------------------------------|
+| UserCancel          | User cancaled                                                                              |
+| NotCreatedMetaID    | MetaID not created                                                                         |
+| NotMatchedMetaID    | Requesting MetaID is not match user MetaID.<br>This can happen if vale of expectMetaId in [Authentication()](class_metadium_KeepinSDK.md#authentication) is not null.                                                          |
+| NotlinkedService    | Service is not enabled by use                                                              |
+| NotRegisterService  | Service is not register by Metadium.<br> See [service register](../../service_registry.md) |
+| InvalidParam        | Invalid parameter value                                                                    |
+| InvalidSignature    | *Not used*                                                                                 |
 
 CallbackDelegete()
 ----------------------
