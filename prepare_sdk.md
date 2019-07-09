@@ -2,7 +2,7 @@
 
 ### Unity
 Download and import [KeepinSDK](http://u3d.as/1zHk) from Asset store.  
-Write the code referring to KeepinSDK/Example inside the Asset.  (Asset 안에 KeepinSDK/Example 을 참고하여 코드를 작성합니다.)  
+Write the code referring to KeepinSDK/Example inside the Asset.  (Refer to KeepinSDK/Example in Asset for writing code.)  
   
 ##### Setting Service ID
 Initialize the SDK with the [registered service ID](service_registry.md).  
@@ -10,7 +10,7 @@ Initialize the SDK with the [registered service ID](service_registry.md).
 KeepinSDK keepinSDK = KeepinSDK.Initialize("service id");
 ```
 ##### Request register service
-Keepin 앱에 인증을 사용하기 위한 권한을 요청하는 예제입니다.  
+Following are example showing request for service register to Keepin App. 
 ```C#
 // Check install
 if (keepinSDK.IsInstalled())
@@ -24,7 +24,7 @@ else
     keepinSDK.Install();
 }
 ```
-Callback 받기 위한 함수를 정의 합니다.
+Define Callback function for response.
 ```C#
 static void RegisterOnResult(Result result)
 {
@@ -44,8 +44,8 @@ static void RegisterOnResult(Result result)
 ```
 
 ### Android
-준비중
+Work In Progress
 
 ### iOS
-준비중
+Work In Progress
 
