@@ -24,6 +24,7 @@ Following are example showing request for service register to Keepin App.
 if (keepinSDK.IsInstalled())
 {
     // Request service register
+    // "message" is text to sign, usually created on the server.
     keepinSDK.Register(new CallbackDelegete(RegisterOnResult), "message");
 }
 else
@@ -59,6 +60,7 @@ public void OnClickAuthentication()
     if (keepinSDK.IsInstalled())
     {
         // Request authentication
+        // "message" is text to sign, usually created on the server.
         keepinSDK.Authentication(new CallbackDelegete(AuthenticationOnResult), "message", true);
     }
     else
