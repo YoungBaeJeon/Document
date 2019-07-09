@@ -1,6 +1,6 @@
 # Metadium Namespace Reference
 class [KeepinSDK](class_metadium_KeepinSDK.md#KeepinSDK-Class-Reference)  
-class [Result](class_metadium_KeepinSD.mdK#Result-class-reference)  
+class [Result](class_metadium_KeepinSDK.md#result-class-reference)  
 enum [ErrorCode](class_metadium_KeepinSDK.md#ErrorCode)  
 delegate void [CallbackDelete](class_metadium_KeepinSDK.md#CallbackDelegete())(Result result)  
 
