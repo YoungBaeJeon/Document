@@ -12,6 +12,9 @@ Keepin can help users to manage ID and Authentication in a single application. U
   
 
 # Steps to Utilize Keepin
+#### Download Keepin
+  * [Android](https://play.google.com/store/apps/details?id=com.coinplug.metadium)
+  * [iOS](https://itunes.apple.com/app//id1452993752?mt=8)
 
 #### Service Registration
 To register service, input service information at [ServiceRegistry File](service_registry.md#service-infomaton) and send Pull Request. For iOS Services, extra step of registering [scheme register](service_registry.md#ios-pre-register-scheme)is required.
