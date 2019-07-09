@@ -7,13 +7,13 @@ Please input following fields for registering service to utilize Keepin Authenti
 Following fields are being used for displaying servies on Keepin App and support user interaction with services. 
 For all of the following, English input is a mandatory, then extra language format can be added.
 
-1. service id : Unique service ID 
-2. name : Name of Service. Displayed on Keepin App as written
-3. descritpion : Description of Service. Displayed on Keepin App as written
-4. icon url : Service Icon / Logo url. Displayed on Keepin App as written
-5. android package name : Used for launching service application from Keepin App or directing users to playstore for install of service app
-6. iOS application id : Used for directing users to appstore for install of service app
-7. web url : web service url
+1. **service id** : Unique service ID 
+2. **name** : Name of Service. Displayed on Keepin App as written
+3. **descritpion** : Description of Service. Displayed on Keepin App as written
+4. **icon url** : Service Icon / Logo url. Displayed on Keepin App as written
+5. **android package name** : Used for launching service application from Keepin App or directing users to playstore for install of service app
+6. **iOS application id** : Used for directing users to appstore for install of service app
+7. **web url** : web service url
 
 index | service id | name | description | icon url | Android package name | iOS applcation id | Web url
 ------|------------|------|-------------|----------|----------------------|-------------------|----------
@@ -22,7 +22,9 @@ index | service id | name | description | icon url | Android package name | iOS 
 
 ### iOS pre-register scheme
 
-For iOS serivces to call Keepin App, scheme needs to be pre-registered. Please select a scheme from the list - LSApplicationQueriesSchemes below and register the application with service id.
+For iOS serivces to call Keepin App, scheme needs to be pre-registered.  
+Please select a scheme from the list.  
+LSApplicationQueriesSchemes below and register the application with service id.  
 
 
 index | scheme        | service id
