@@ -7,6 +7,9 @@ Write the code referring to KeepinSDK/Example inside the Asset.  (Refer to Keepi
 
 See [SDK reference](/doc/unity/class_metadium_KeepinSDK.md)
 
+##### Supported Platform
+  * Android
+  * iOS
 
 
 ##### Setting Service ID
