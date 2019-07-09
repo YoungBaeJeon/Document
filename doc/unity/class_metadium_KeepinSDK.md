@@ -1,18 +1,16 @@
 # Metadium Namespace Reference
-***class*** [**KeepinSDK**](class_metadium_KeepinSDK.md#KeepinSDK-Class-Reference)  
-***class*** [**Result**](class_metadium_KeepinSDK.md#result-class-reference)  
-***enum*** [**ErrorCode**](class_metadium_KeepinSDK.md#ErrorCode)  
-***delegate*** ***void*** [**CallbackDelegete**](class_metadium_KeepinSDK.md#callbackdelegete)([**Result**](class_metadium_KeepinSDK.md#result-class-reference) result)  
+***class*** [**KeepinSDK**](class_metadium_KeepinSDK.md#KeepinSDK-Class-Reference)<br/>
+***class*** [**Result**](class_metadium_KeepinSDK.md#result-class-reference)<br/>
+***enum*** [**ErrorCode**](class_metadium_KeepinSDK.md#ErrorCode)<br/>
+***delegate*** ***void*** [**CallbackDelegete**](class_metadium_KeepinSDK.md#callbackdelegete)([**Result**](class_metadium_KeepinSDK.md#result-class-reference) result)<br/>
 <br/>
 <br/>
 <br/>
-
-
-
 ErrorCode
 -------------
-***enum*** ErrorCode : ***int***
-Response error code.
+***enum*** ErrorCode : ***int***<br/>
+<br/>
+Response error code<br/>
   * UserCancel
   * NotCreatedMetaID
   * NotMatchedMetaID
@@ -20,20 +18,18 @@ Response error code.
   * NotRegisterService
   * InvalidParam
   * InvalidSignature 
-  
-  
+<br/><br/>  
 CallbackDelegete()
 ----------------------
-delegate void Metadium.CallbackDelegete(Result result)  
-  
-callback delegate for receiving response to requests to register and authentication to Keepin App.  
-  
-Parameters  
-  * result : Response to request  
-  
-  
-  
-
+delegate void Metadium.CallbackDelegete(Result result)<br/>
+<br/>
+callback delegate for receiving response to requests to register and authentication to Keepin App.<br/>
+<br/>
+Parameters
+  * result : Response to request
+<br/>
+<br/>
+<br/>
 ## KeepinSDK Class Reference
 
 Authentication()
