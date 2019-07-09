@@ -23,7 +23,7 @@ index | service id | name | description | icon url | Android package name | iOS 
 ### iOS pre-register scheme
 
 For iOS serivces to call Keepin App, scheme needs to be pre-registered.  
-Please select a scheme from the list and add the selected scheme to  URLType.  
+Please select a scheme from the list and add the selected scheme to [URLType](https://developer.apple.com/documentation/uikit/inter-process_communication/allowing_apps_and_websites_to_link_to_your_content/defining_a_custom_url_scheme_for_your_app).  
 
 
 index | scheme        | service id
