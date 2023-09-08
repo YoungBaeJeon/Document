@@ -14,4 +14,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: |
-         echo ${{github.ref_name}} ${{GITHUB_ACTOR}}
+         echo ${{github.ref_name}} ${{github.actor}}
