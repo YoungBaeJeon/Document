@@ -10,7 +10,8 @@ on:
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   test:
-   runs-on: ubuntu-latest
-   steps:
-     - run: |
-         echo "Test"
+    if: github.event_name == 'workflow_dispatch'
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+         echo "Test $github.ref_name"
