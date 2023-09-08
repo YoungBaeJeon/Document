@@ -14,4 +14,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: |
-         echo "Test $github.ref_name"
+         echo ${{github.ref_name}}
